@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+  background-color: #BFFCFC;
+  background-image: linear-gradient(90deg, #3BBFBF, #BFFCFC);
+}
+
+h1{
+  font-family: serif;
+}
+
+h1#principal{
+  color: #BFFCFC;
+  background-color: #017F7F;
+  text-align: center;
+}
+
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+  text-indent: 25px;
+}
+
+.básico{
+  color: #D2C61A;
+}
+
+.intermediário{
+  color: #279C1A;
+}
+
+.avançado{
+  color: #9E1717;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pseudo-Elemento</title>
+    <style type="text/css" media="all">
+    
+    body{
+      font-family:  Arial, Helvetica, sans-serif;
+    }
+    
+      a{
+        color: red;
+        text-decoration: none;
+      }
+      
+      a:hover{
+        text-decoration: underline;
+        
+      }
+      
+      a:visited{
+        color: darkred;
+      }
+      
+      a:active{
+        color: yellow;
+      }
+      
+      a::after{
+        content: ' <-';
+      }
+      
+      a::before{
+        content: '-> ';
+      }
+    </style>
+</head>
+
+<body>
+  <h1>Alguns Links</h1>
+  <ul>
+    <li><a href="https://youtube.com/cursoemvideo" target="_b
+    ank">Canal Curso em Vídeo</a></li>
+    <li><a href="http://gustavoguanabara.github.io" target="_blank">Repositório</a></li>
+    <li><a href="https://cursoemvideo.com" target="_blank">Site do Curso em Video</a></li>
+  </ul>
+</body>
+
+</html>
