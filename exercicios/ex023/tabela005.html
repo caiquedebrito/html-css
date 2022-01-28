@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: .5rem;
+        }
+
+        .gray {
+            background-color: rgb(211, 211, 211);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="gray">
+            <col class="white">
+            <col class="gray" span="2">
+            <!-- <col class="white"> -->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Junior</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Mônica</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Piloto</td>
+        </tr>
+        <tr>
+            <td>Lara</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Professora</td>
+        </tr>
+    </table>
+</body>
+</html>

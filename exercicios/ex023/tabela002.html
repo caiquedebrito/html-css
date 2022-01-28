@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            height: 400px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
+        caption {
+            background-color: rgb(224, 224, 224);
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Anatomias de tabelas</h1>
+    <table>
+        <caption>Ranking Nacional de Clubes 2022 - Top 10</caption>
+        <thead>
+            <tr>
+                <th>Pos.</th>
+                <th>Clube</th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Flamengo</td>
+                <td>17.054</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Palmeiras</td>
+                <td>14.584</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Atlético - MG</td>
+                <td>14.572</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Grémio</td>
+                <td>14.336</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Athlético</td>
+                <td>13.512</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Santos</td>
+                <td>12.816</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>São Paulo</td>
+                <td>12.604</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Internacional</td>
+                <td>12.108</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Fluminense</td>
+                <td>11.100</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Corinthians</td>
+                <td>11.064</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
