@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 30px;
 }
 
@@ -88,11 +88,15 @@ textarea::placeholder{
     height: 100%;
     background-color: rgb(36, 35, 35);
     border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(196, 196, 196, 0.397);
     color: white;
+    transition: all .2 ease-in-out;
 }
 
 #submit:hover{
     background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
     color: black;
     transition: 0.5s;
 }
