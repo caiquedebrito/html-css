@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#banner">Banner</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home"></section>
+
+    <section id="banner">
+        <article>
+            Banner 
+        </article>
+    </section>
+
+    <section id="sobre" class="flexivel">
+        <article data-anima="esquerda">
+            Sobre Mim
+        </article>
+        <article data-anima="direita">
+            Meu nome é Caique
+        </article>
+    </section>
+
+    <section id="contato" class="flexivel">
+        <article data-anima="esquerda" class="containerContato">
+            <img src="imagens/f1.jpg" class="mini" alt="Paisagem 1" onclick="cliqueModal(this)">
+            <img src="imagens/f2.jpg" class="mini" alt="Paisagem 2" onclick="cliqueModal(this)">
+            <img src="imagens/f3.jpg" class="mini" alt="Paisagem 3" onclick="cliqueModal(this)">
+            <img src="imagens/f10.jpg" class="mini" alt="Paisagem 4" onclick="cliqueModal(this)">
+        </article>
+        <article data-anima="centro" class="containerContato">
+            <img src="imagens/f4.jpg" class="mini" alt="Paisagem 5" onclick="cliqueModal(this)">
+            <img src="imagens/f5.jpg" class="mini" alt="Paisagem 6" onclick="cliqueModal(this)">
+            <img src="imagens/f6.jpg" class="mini" alt="Paisagem 7" onclick="cliqueModal(this)">
+            <img src="imagens/f11.jpg" class="mini" alt="Paisagem 8" onclick="cliqueModal(this)">
+        </article>
+        <article data-anima="direita" class="containerContato">
+            <img src="imagens/f7.jpg" class="mini"  alt="Paisagem 9" onclick="cliqueModal(this)">
+            <img src="imagens/f8.jpg" class="mini" alt="Paisagem 10" onclick="cliqueModal(this)">
+            <img src="imagens/f9.jpg" class="mini" alt="Paisagem 11" onclick="cliqueModal(this)">
+            <img src="imagens/f12.jpg" class="mini" alt="Paisagem 12" onclick="cliqueModal(this)">
+        </article>
+    </section>
+
+    <footer></footer>
+
+    <div id="janelaModal" class="janelaModal escondeJanelaModal">
+        <span id="btnFechar" class="fecharModal">x</span>
+        <img id="imgModal" class="imgModal" src="#">
+        <div id="txtModal" class="txtModal"></div>
+    </div>
+
+
+</body>
+</html>

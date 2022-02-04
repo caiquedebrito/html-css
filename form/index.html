@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: .5rem;
+            border-radius: .6rem;
+            background-color: lightgray;
+        }
+        input {
+            margin-bottom: 1rem;
+        }
+
+        .break {
+            display: block;
+        }
+
+        div {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="cadastro" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dados</legend>
+            <label for="">Username:</label>
+            <input type="text" name="username" maxlength="10" size="10" class="break">
+            <label for="">Senha:</label>
+            <input type="password" name="senha" maxlength="10" size="10" class="break">
+        </fieldset>
+
+        <label for="" class="break">Linguagens:</label>
+        <input type="checkbox" name="js">JavaScript
+        <input type="checkbox" name="python">python
+        <input type="checkbox" name="C#">C#
+
+        <label for="" class="break">Sexo</label>
+        <input type="radio" name="sexo" value="m">Masculino
+        <input type="radio" name="sexo" value="f">Feminino
+
+        <label for="" class="break">Hora</label>
+        <input type="time" name="hora" min="09:00" max="17:00">
+
+        <label for="" class="break">Data:</label>
+        <input type="date" name="data" min="2022-02-01">
+
+        <label for="" class="break">Data e Hora</label>
+        <input type="datetime-local" name="data_hora" id="">
+
+        <label for="" class="break">Mês</label>
+        <input type="month" name="mes" id="">
+
+        <label for="" class="break">Semana</label>
+        <input type="week" name="semana" id="">
+
+        <input type="hidden" name="tipo" value="cadastro">
+
+        <label for="" class="break">Selecione uma cor:</label>
+        <input type="color" name="cor" id="">
+
+        <label for="" class="break">Email:</label>
+        <input type="email" name="email">
+
+        <input type="image" src="" alt="oi" class="break" name="image">
+
+        <label for="" class="break">Telefone:</label>
+        <input type="tel" name="tel" placeholder="(xx)9xxxx-xxxx" pattern="\([0-9]{2}\)9{1}[0-9]{4}-[0-9]{4}">
+
+        <label for="" class="break">Senha</label>
+        <input type="password" name="senha" pattern="[0-9]{4}">
+
+        <label for="" class="break">Numéro</label>
+        <input type="number" name="number" step="2" min="0" max="20">
+
+        <label for="" class="break">Pesquisa</label>
+        <input type="search" name="pesquisa">
+
+        <input type="file" name="file" class="break" multiple accept=".jpg, .png">
+
+        <label for="" class="break">Url</label>
+        <input type="url" name="url">
+
+        <select name="select" class="break" size="1" multiple>
+            <option value="preto">Preto</option>
+            <option value="branco">Branco</option>
+            <option value="verde">Verde</option>
+            <option value="vermelho">Vermelho</option>
+        </select>
+
+        <input list="cores" name="cor" class="break" placeholder="selecione">
+        <datalist id="cores">
+            <option value="red">Vermelho</option>
+            <option value="green">Verde</option>
+            <option value="blue">Azul</option>
+            <option value="black">Preto</option>
+
+        </datalist>
+
+        <textarea name="comen" id="" cols="30" rows="10"></textarea>
+
+        <div>
+            <input type="button" value="botão" name="enviar">
+            <input type="reset" value="reset" name="resetar">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+</html>

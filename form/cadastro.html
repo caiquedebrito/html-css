@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Homem-Aranha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="get" name="spider-form">
+        <fieldset>
+            <legend>Cadastro do Homem-Aranha</legend>
+            <div>
+                <label for="name">Identidade Secreta</label>
+                <input type="text" required id="name" name="name" size="40">
+            </div>
+
+            <div>
+                <label for="age">Data de nascimento</label>
+                <input type="date" name="age" id="age" max="2020-01-01" min="1920-01-01" required>
+            </div>
+
+            <div class="break">
+                <label for="sexo">Sexo</label>
+                <label for=""><input type="radio" name="sexo" value="f" checked>Feminino</label>
+                <label for=""><input type="radio" name="sexo"  value="m">Masculino</label>
+            </div>
+
+            <div class="break">
+                <label for="spider-man">Qual é o melhor Homem-Aranha?</label>
+                <label for=""><input type="radio" name="spider-man" value="tobey">Tobey Maguire</label>
+                <label for=""><input type="radio" name="spider-man" value="andrew">Andrew Garfield</label>
+                <label><input type="radio" name="spider-man" value="tom">Tom Holland</label>
+            </div>
+
+            <div class="break">
+                <label for="image">Selecione uma foto do Homem-Aranha</label>
+                <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png">
+            </div>
+
+            <div class="break">
+                <label for="descrition">Faça uma descrição sobre do seu Homem-Aranha</label>
+                <textarea name="descrition" id="descrition" cols="50" rows="5"></textarea>
+            </div>
+
+            <div><input type="submit" value="submit"></div>
+        </fieldset>
+    </form>
+</body>
+</html>
