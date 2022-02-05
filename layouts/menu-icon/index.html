@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            cursor: pointer;
+            display: inline-block;
+        }
+        .container div {
+            background-color: black;
+            width: 35px;
+            height: 5px;
+            margin: 5px 0;
+            transition: all .5s ease-in-out;
+        }
+
+        .mudar .bar1 {
+            transform: rotate(45deg) translate(5px, 9px);
+        }
+
+        .mudar .bar2{
+            opacity: 0;
+        }
+
+        .mudar .bar3{
+            transform: rotate(-45deg) translate(5px, -8px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" onclick="mudar(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <script>
+        function mudar(n) {
+            n.classList.toggle('mudar')
+        }
+    </script>
+</body>
+</html>
