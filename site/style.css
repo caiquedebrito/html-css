@@ -1,0 +1,144 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px 0;
+}
+
+p {
+    width: 90%;
+    margin: auto;
+}
+
+/* CONFIGURAÇÕES DA PRIMEIRA SECTION (WELCOME) */
+
+.welcome {
+    width: 100%;
+    background: url('1014.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+}
+
+
+
+.welcome h1 {
+    margin: auto;
+    font-size: 3em;
+    max-width: 900px;
+}
+
+@media (max-width: 430px) {
+    .welcome h1 {
+        font-size: 32px;
+    }
+}
+
+.welcome form {
+    margin: 40px 0;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inputs input {
+    height: 2.5rem;
+    border: none;
+}
+
+#email {
+    width: 300px;
+    padding: 0 10px;
+}
+
+#submit, button {
+    width: 150px;
+    background-color: blue;
+    color: white;
+}
+
+.social-midia{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+/* CONFIGURAÇÕES DA SEGUNDA SECTION (OUR WORK) */
+
+.our-work {
+    padding: 60px 0;
+}
+
+.our-work p{
+    line-height: 28px;
+}
+
+.imgs-div {
+    position: relative;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    min-width: 300px;
+}
+
+.img {
+    max-width: 400px;
+    position: absolute;
+    opacity: 0;
+    transition: 2s .1s;
+}
+
+.img1 {
+    right: 55px;
+    transform: translateX(100%); 
+}
+
+.img2 {
+    left: 55px;
+    bottom: -11px;
+    transform: translateX(-100%);
+}
+
+[data-anima].animacao {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.our-work button{
+    height: 50px;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .img {
+        position: static;
+        margin: auto;
+    }
+
+    .imgs-div {
+        height: auto;
+    }
+}
