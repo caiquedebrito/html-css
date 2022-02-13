@@ -1,14 +1,15 @@
 let imgs = document.querySelectorAll('[data-anima]')
-
-function animaScroll(params) {
-    const h = window.scrollY
-    console.log(h)
-    imgs.forEach(img => {
-        console.log(img.offsetTop)
-        if (h > 400) {
+// const img1 = document.getElementsByClassName('img1')
+// console.log(imgs[0].getBoundingClientRect().y)
+function animaScroll() {
+    // Pega as posições das images no eixo y
+    let img1Y = imgs[0].getBoundingClientRect().y
+    if (img1Y < 350) {
+        for (let img of imgs) {
             img.classList.add('animacao')
         }
-    })
+    }
+
 }
 
 window.addEventListener('scroll', () => animaScroll())

@@ -21,9 +21,10 @@ h1, h2 {
     padding: 30px 0;
 }
 
-p {
-    width: 90%;
-    margin: auto;
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
 }
 
 /* CONFIGURAÇÕES DA PRIMEIRA SECTION (WELCOME) */
@@ -36,12 +37,15 @@ p {
     padding: 100px 0;
 }
 
-
-
 .welcome h1 {
     margin: auto;
     font-size: 3em;
     max-width: 900px;
+}
+
+.welcome p {
+    width: 90%;
+    margin: auto;
 }
 
 @media (max-width: 430px) {
@@ -80,6 +84,10 @@ p {
     display: flex;
     justify-content: center;
     column-gap: 10px;
+}
+
+.social-midia div {
+    margin: 0 10px;
 }
 
 /* CONFIGURAÇÕES DA SEGUNDA SECTION (OUR WORK) */
@@ -141,4 +149,49 @@ img {
     .imgs-div {
         height: auto;
     }
+}
+
+/* CONFIGURAÇÕES DA TERCEIRA SECTION */
+.process {
+    background-color: #eaeaea;
+    padding: 1rem 0;
+}
+
+#process-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#process-div div {
+    width: 30%;
+    min-width: 300px;
+    text-align: justify;
+    height: 250px;
+    /* border: 1px solid blue; */
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 654px) {
+    #process-div div {
+        width: 90%;
+    }
+}
+
+.div-blue {
+    background-color: blue;
+    color: white;
+}
+
+.div-white {
+    background-color: white;
+}
+
+i.fas {
+    font-size: 40px;
 }
