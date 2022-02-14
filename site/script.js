@@ -1,20 +1,14 @@
 let imgs = document.querySelectorAll('[data-anima]')
-// const img1 = document.getElementsByClassName('img1')
-function animaScroll() {
-    let top = window.scrollY 
-    imgs.forEach(img => {
-        if (top > img.offsetTop) {
-            img.classList.add('animacao')
-        }
-    })
-    // Pega as posições das images no eixo y
-    // let img1Y = imgs[0].getBoundingClientRect().y
-    // if (img1Y < 350) {
-    //     for (let img of imgs) {
-    //         img.classList.add('animacao')
-    //     }
-    // }
 
+// Função para a transição das imagens
+function animaScroll() {
+    let posImg = imgs[1].offsetTop //Posição Y da imagem no documento
+    let pixelScroll = window.scrollY //quantidade de pixel "rolado"
+    let screenHeight = screen.availHeight //altura do navegador
+
+    if (pixelScroll >= posImg*0.25 && pixelScroll >= screen.availHeight * 0.25) {
+        imgs.forEach(img => img.classList.add('transition'))
+    }
 }
 
 window.addEventListener('scroll', () => animaScroll())
